@@ -3,3 +3,170 @@
 body {
   font-family: "Work Sans", sans-serif;
 }
+/* share style */
+.display_flex {
+  display: flex;
+}
+.text_gray {
+  color: rgb(66, 66, 66);
+}
+/* nav bar style */
+.navbar {
+  justify-content: space-between;
+  align-items: center;
+}
+.nav_itme {
+  list-style: none;
+  margin-right: 30px;
+}
+.nav_link {
+  text-decoration: none;
+  font-weight: 500;
+}
+.bg_light {
+  background: rgba(255, 144, 14, 0.1);
+}
+.navbar,
+.banner {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.brand {
+  font-weight: 700;
+  font-size: 2.25rem;
+}
+/* .banner */
+.banner_con {
+  max-width: 862px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.banner_title {
+  font-size: 3rem;
+  font-weight: 700;
+}
+.banner_des {
+  font-size: 1rem;
+  font-weight: 400;
+}
+.btu_primary {
+  background-color: #ff900e;
+  padding: 20px 25px;
+  color: white;
+  font-weight: 600;
+  border-radius: 5px;
+  border: none;
+}
+.banner_img {
+  width: 100%;
+}
+/* main */
+main {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+main section {
+  margin-top: 150px;
+}
+.teams {
+  align-items: center;
+}
+.teams_img {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+.Our_Features {
+  margin-left: 150px;
+  max-width: 537px;
+}
+.to {
+  font-weight: 500;
+  font-size: 2.75rem;
+}
+.too {
+  font-size: 2.75rem;
+  font-weight: 700;
+}
+.tooo {
+  font-size: 2.75rem;
+  font-weight: 700;
+  color: #ff900e;
+}
+/* <!-- some facts -->s */
+.some {
+  max-width: 1440px;
+}
+.fact_title {
+  font-size: 2.75rem;
+  font-weight: 700;
+}
+.fact_des {
+  font-size: 1rem;
+  font-weight: 400;
+}
+.fact {
+  border: 1px solid tomato;
+  height: 200px;
+  width: 200px;
+  border-radius: 8px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.fact_nember {
+  font-size: 2.75rem;
+  font-weight: 600;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+.fact_name {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.fact_conten {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 50px;
+}
+/* media */
+@media screen and (max-width: 576px) {
+  .nav_links,
+  .navbar,
+  .teams {
+    flex-direction: column;
+  }
+  .teams_img {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 24px;
+  }
+  .Our_Features {
+    margin-left: 20px;
+  }
+  .fact_conten {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 50px;
+    margin-left: 85px;
+  }
+  .fact_title {
+    margin-left: 20px;
+  }
+  .fact_des {
+    margin-left: 20px;
+  }
+}
+/* medime size */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  .teams {
+    flex-direction: column;
+  }
+  .Our_Features {
+    margin-left: 20px;
+  }
+}
